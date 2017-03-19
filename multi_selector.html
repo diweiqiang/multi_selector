@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <script src="jquery-3.1.0.js"></script>
+    <style>
+        body {
+            color:#333;
+            font-family:"Microsoft YaHei",sans-serif;
+            height:100%;
+            font-size:12px
+        }
+        a{
+            text-decoration: none;
+        }
+        ul,li{
+            list-style-type: none;
+        }
+        image{
+
+        }
+
+        .wrapper{
+            border:1px #d3d3d3 solid;
+            border-radius: 5px;
+            margin:20px auto;
+            padding:5px;
+            font-size: 1.5em;
+        }
+        #pullItem p{
+            padding:5px;
+            /*line-height: 30px;*/
+            font-size: 16px;
+        }
+        #pullItem p:hover{
+            background-color:cornflowerblue;
+            color:white;
+        }
+        .item{
+            background:aliceblue;
+            border-radius:5px;
+            padding:5px;
+            margin-right:5px;
+            margin-bottom:5px;
+        }
+        .symble{
+            margin-left:3px;
+            border:1px solid #e6e6e6;
+            border-radius:50%;
+            background-color:#f2f2f2;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="wrapper">
+        <span id="gDfault">请选择</span>
+        <span id="gSpan" style="display: none;"></span>
+        <span id="flag" class="glyphicon glyphicon-chevron-down pull-right"></span>
+        <span class="fr"> <img id="clearG" class="clear" style="display: none;" src="http://www.jq22.com/tp/a3d67479-1508-48b2-898f-548eaf9d8640.png"/> </span>
+    </div>
+
+    <div id="pullItem" style="display: none;margin-left: 5px;"></div>
+</div>
+
+<script src="multi_selector.js"></script>
+</body>
+</html>
